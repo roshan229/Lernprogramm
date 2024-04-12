@@ -1,0 +1,102 @@
+<!--Quizdescription to quiz part
+  Allgemein , instead of Bitcoin
+  questionanswer  , for quizcontainer
+  quizquestion  , quizquestioncontainer
+  quizanswert, answertcontainer
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" , href="beleg.css">
+        <title>LernProgramm</title>
+        <meta charset="UTF-8">
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+        
+    </head>
+
+    <body>
+        <!--For navigation bar-->
+        <div class="navbar">
+            <!--uniquely identifies an element,"#" is a placeholder URL often used in HTML to create a link
+                                    that  doesn't navigate anywhere when clicked.-->
+                    <a id="accent-background" href="#" onclick="ShowHome(); return false"><u>HOME</u></a> <!--it will call the showhome function from js datei--> 
+                    <a href="#" onclick="ShowMaths(); MenuToggle(); return false;">MATHEMATIK</a>
+                    <a href="#" onclick="ShowIT(); MenuToggle(); return false;">INTERNETTECHNOLOGIE</a>
+                    <a href="#" onclick="Allgemein(); MenuToggle(); return false;">ALLGEMEIN</a>
+                    <!--<button id="menu-button" onclick="MenuToggle()"><i class="fa-solid fa-bars"></i></button>-->
+        </div>
+
+        <div class="homepage" >
+                <section >
+                    <p>                </p>
+                    <p>                </p>
+                    <img src="lernplattform.avif" alt="Italian Trulli" style="width:1000px;height:250px;">   
+
+                </section>
+
+                <p id ="paragraph">  Hier geht es um Lernplattformen für allen, wo Sie Ihre Kenntnisse von Mathematik,
+                    Internettechnologie und Allgemein testen lassen</p>
+
+                <section> 
+                    <div class="container">
+                        <h1><u style="text-decoration-color: rgb(12, 12, 12);">Kategorien:</u></h1>
+                        <ul>
+                            <li><a href="#" onclick="ShowMaths();return false;">Mathematik</a></li>
+                            <li><a href="#" onclick="ShowIT();return false;">Internettechnologie</a></li>
+                            <li><a href="#" onclick="Allgemein();return false;">ALLGEMEIN</span></a></li>
+                        </ul>
+                    </div> 
+                </section>
+
+        </div >
+            
+        
+                <!--When mathematik or Internecttechnolie is clicked-->
+
+
+        <div class ="Quizpart" style="display: block;"> 
+            <p>       </p>
+            <h1 class="header"> Mathematik</h1>
+            <p id ="Topic"> Here the questions related with Maths are asked </p>
+
+            <div class="container">
+                <p>Nutze REST-API:</p>
+                <label class="switch">
+                    <input id="toggle-button" type="checkbox" onclick="toggleButton()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            
+            <div id ="StartQuizbutton">
+                <p>
+
+                </p>
+                <button class="button" onclick="StartQuiz()">Quiz starten</button>
+            </div>
+
+
+        </div>
+
+        <div class ="QuestionAnswer"  style="text-align: center;">
+            <div class="quizQuestion">
+                <h2 id="quizQuestion">Questions</h2>
+            </div>
+
+            
+                <div class="quizanswer">
+                    <button type="button" id="answerButton0">Antwort 1</button>
+                    <button type="button" id="answerButton1">Antwort 2</button>
+                    <button type="button" id="answerButton2">Antwort 3</button>
+                    <button type="button" id="answerButton3">Antwort 4</button>
+                </div>
+            
+        </div>
+
+    </body>
+</html>

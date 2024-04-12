@@ -1,0 +1,7 @@
+where to --function in js and src 
+JS Syntax  - adding to string together  
+JS Data type --object in JS ,array 
+
+//Json
+Json --Data type-->A common use of JSON is to exchange data to/from a web server.
+When receiving data from a web server, the data is always a string

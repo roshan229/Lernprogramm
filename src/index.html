@@ -1,0 +1,162 @@
+<!-- Not case sensetiv ,dh small big wont create a problem-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">  <!--to link with style.css, we can use same
+        .css for several .html file-->
+</head>
+<!-- This is how  we comment in html-->
+<bodY>
+    <p>This is a paragram</p>
+    <h1 style="color:green" ><big> Hello</big> <b><i><u>World</b></i></u></h1> <!--color is for color and background -->
+    <a href="https://facebook.com" target="_main">Facebook</a> <!-- target for the new tab-->
+    <br><!--to break the line-->
+    <img src="car.jpg" alt="Porsche">
+    
+    <p>This is a what i want in my life</p> <!--to add paragraphs in Html-->
+    <pre>This 
+        is a demo.
+    </pre>
+
+    <h1 style ="background-color: #FFFFFF;"> This is mz website</h1>
+    <p id="p1">This is a what i want in my life</p>
+    <p>This is a what i want in my life</p> <!--id -->
+    <p>This is a what i want in my life</p>
+
+    <ul>               <!--ul-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+
+      <ol>          <!--ol-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+
+    <hr/> <!--horizontal line-->
+
+      <dl>               <!--dl-->
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+      
+    <figure class="gesamt">
+        <figure class="einzel">
+            <img src="car.jpg" alt="Zwinger" />
+            <figcaption>Dresdner Zwinger</figcaption>
+        </figure>
+        <figure class="einzel">
+            <img src="car.jpg" alt="Frauenkirche" />
+            <figcaption>Frauenkirche</figcaption>
+         </figure>
+    <figcaption class="gesamt">Ansichten von Dresden</figcaption>
+    </figure>
+    
+
+    <table border="1">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            </tr>
+            <tr>
+            <td>D</td>
+            <td>C</td>
+            <td>F</td>
+        </tr>
+    </table>
+        
+                    <!--Audio-->
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+      <!--video-->
+    <video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+    </video>
+    <br>
+                <!--Canvas-->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+
+    <br>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 10, 50);
+    </script>
+
+                <!--Not working -->
+    <script type="text/javascript">
+        var canvas = document.getElementById("Kreis");
+        if (canvas.getContext) {
+        var c = canvas.getContext("2d"); // zeichnen
+        c.fillStyle = "#FF0000";
+        c.fillRect( 1, 1, 199, 99 );
+        c.fillStyle = "#00FF00";
+        c.arc(70, 50, 30, 0, Math.PI * 2, true);
+        c.fill();
+        }
+    </script>
+
+    <!--SVG-->
+    <svg width="400" height="120">
+        <rect x="0" y="0" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+    </svg>
+
+            <!--Form-->
+    <form>
+        <label for="fname">First name:</label><br>  The <label> <!-- defines a label for many form elements.-->
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </form>
+
+      <form action="/action_page.php"> <!-- on submitting it will go to this page-->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+          <!--DIV-->
+      <div style="text-align:center; border:thin solid red;">
+        <h1>Zentriert</h1>
+        <ul>
+        <li>alles zentriert</li>
+        <li><span style="color:red">alles!</span></li>
+        </ul>
+      </div>
+
+      <ul>
+<li><a href="a" title="Start"/>Start</a></li>
+<li><a href="b" title="Bücher"/>Bücher</a></li>
+</ul>
+
+        
+</body>
+<script src="java.js"></script>
+</html>
